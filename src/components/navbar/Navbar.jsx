@@ -6,12 +6,12 @@ import user from "../../assets/user.png";
 const Navbar = () => {
   return (
     <div className="navbar" data-testid="nav">
-      <div className="navbar-items">
-        <img className="logo" src={logo} alt="" />
-        <h2 className="games">Games</h2>
-        <h2 className="about">About</h2>
-        <h2 className="about">Contact</h2>
-        <img className="user" src={user} alt="" />
+      <div className="navbar-items" data-testid="nav-items">
+        <img className="logo" data-testid="logo" src={logo} alt="logo-img" />
+        <h3 className="games">Games</h3>
+        <h3 className="about">About</h3>
+        <h3 className="about">Contact</h3>
+        <img className="user" data-testid="user" src={user} alt="" />
       </div>
     </div>
   );

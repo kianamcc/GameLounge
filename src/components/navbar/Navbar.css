@@ -1,38 +1,64 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+}
+
 .navbar-items {
-    display: flex;
-    align-items: center;
-    background-color: grey;
-    gap: 20px;
-    color: white;
-    background-color: black;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  /* gap: 35px; */
+  color: white;
+  background-color: black;
+  overflow: scroll;
 }
 
 .user {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-h1, h2 {
-    margin: 0;
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+  width: 110px;
+  height: 110px;
 }
 
 .user {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
-.games:hover, .about:hover, .contact:hover, .user:hover {
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    cursor: pointer;
+.games, .about, .contact {
+    min-width: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.games:hover,
+.about:hover,
+.contact:hover,
+.user:hover {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
 }
