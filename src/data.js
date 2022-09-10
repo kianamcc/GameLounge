@@ -22,7 +22,7 @@ const data = [
     url: "https://www.igdb.com/games/pokemon",
   },
   {
-    id: 30981,
+    id: 30983,
     category: 8,
     first_release_date: 1966,
     genres: [2],
@@ -33,7 +33,7 @@ const data = [
     url: "https://www.igdb.com/games/digimon",
   },
   {
-    id: 30981,
+    id: 30985,
     category: 8,
     first_release_date: 1966,
     genres: [2],
@@ -44,7 +44,7 @@ const data = [
     url: "https://www.igdb.com/games/persona5",
   },
   {
-    id: 30981,
+    id: 30922,
     category: 8,
     first_release_date: 1966,
     genres: [2],
@@ -55,7 +55,7 @@ const data = [
     url: "https://www.igdb.com/games/mgs",
   },
   {
-    id: 30981,
+    id: 30111,
     category: 8,
     first_release_date: 1966,
     genres: [2],
