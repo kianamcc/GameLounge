@@ -2,3 +2,18 @@
     color: white;
     padding: 20px;
 }
+
+.games-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.game-card {
+    padding: 20px;
+}
+
+.game-img {
+    height: 250px;
+    width: 250px;
+}

@@ -9,8 +9,12 @@ const PopularGames = (props) => {
       <div className="popular-games-card-container">
         {props.data.map((game) => {
           return (
-            <div className="popular-game-card" key={game.id}>
-              <img src={liquid} alt="" className="popular-game-img" />
+            <div className="popular-game-card" key={game.background_image}>
+              <img
+                src={game.background_image}
+                alt=""
+                className="popular-game-img"
+              />
               <h3 className="popular-game-name">{game.name}</h3>
             </div>
           );

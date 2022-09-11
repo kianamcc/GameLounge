@@ -1,10 +1,10 @@
 const data = [
   {
-    id: 3498,
+    id: 3558,
     background_image:
-      "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-    name: "Grand Theft Auto V",
-    rating: 4.47,
+      "https://m.media-amazon.com/images/M/MV5BNGJhOGJmZGItNjQwZS00MzQ5LTg0MDMtYTc3YzAwMDc4YjFmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_FMjpg_UX1000_.jpg",
+    name: "Digimon",
+    rating: 2.7,
     rating_top: 5,
     ratings_count: 5874,
     esrb_rating: {
@@ -41,24 +41,25 @@ const data = [
       },
     ],
     short_screenshots: [
-      {
-        id: -1,
-        image:
-          "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-      },
-      {
-        id: 1827221,
-        image:
-          "https://media.rawg.io/media/screenshots/cf4/cf4367daf6a1e33684bf19adb02d16d6.jpg",
-      },
+      // {
+      //   id: -1,
+      //   image:
+      //     "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+      // },
+      // {
+      //   id: 1827221,
+      //   image:
+      //     "https://media.rawg.io/media/screenshots/cf4/cf4367daf6a1e33684bf19adb02d16d6.jpg",
+      // },
     ],
   },
 
   {
-    id: 3198,
-    background_image: "/",
-    name: "Persona 5",
-    rating: 4.6,
+    id: 3004,
+    background_image:
+      "https://upload.wikimedia.org/wikipedia/en/5/5a/FF_XV_cover_art.jpg",
+    name: "Final Fantasy XV",
+    rating: 4.9,
     rating_top: 5,
     ratings_count: 6008,
     esrb_rating: {
@@ -95,16 +96,16 @@ const data = [
       },
     ],
     short_screenshots: [
-      {
-        id: 10,
-        image:
-          "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-      },
-      {
-        id: 19021,
-        image:
-          "https://media.rawg.io/media/screenshots/cf4/cf4367daf6a1e33684bf19adb02d16d6.jpg",
-      },
+      // {
+      //   id: 10,
+      //   image:
+      //     "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+      // },
+      // {
+      //   id: 19021,
+      //   image:
+      //     "https://media.rawg.io/media/screenshots/cf4/cf4367daf6a1e33684bf19adb02d16d6.jpg",
+      // },
     ],
   },
 ];

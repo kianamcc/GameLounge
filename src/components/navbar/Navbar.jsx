@@ -7,11 +7,16 @@ const Navbar = () => {
   return (
     <div className="navbar" data-testid="nav">
       <div className="navbar-items" data-testid="nav-items">
-        <img className="logo" data-testid="logo" src={logo} alt="logo-img" />
-        <h3 className="games">Games</h3>
-        <h3 className="about">About</h3>
-        <h3 className="about">Contact</h3>
-        <img className="user" data-testid="user" src={user} alt="" />
+        <img
+          className="navbar-logo"
+          data-testid="logo"
+          src={logo}
+          alt="logo-img"
+        />
+        <h3 className="navbar-games">Games</h3>
+        <h3 className="navbar-about">About</h3>
+        <h3 className="navbar-contact">Contact</h3>
+        <img className="navbar-user" data-testid="user" src={user} alt="" />
       </div>
     </div>
   );
