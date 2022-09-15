@@ -3,14 +3,14 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import PopularGames from "./components/popular-games/PopularGames";
 import Games from "./components/games/Games";
-import mockData from "./data";
-import mockData2 from "./data2";
+import SearchBar from "./components/search-bar/SearchBar";
 import axios from "axios";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   // states
-  const [data, setData] = useState(mockData);
-  console.log(mockData);
+  const [data, setData] = useState([{}]);
+  const [userInput, setUserInput] = useState("");
 
   // fetch API
   // useEffect(() => {
@@ -23,11 +23,38 @@ function App() {
   //     .catch((err) => err);
   // }, []);
 
+  useEffect(() => {
+    // get data from backend
+    axios
+      .get("/api")
+      .then((response) => {
+        console.log("frontend recieved data: ", response);
+        setData(response.data.data);
+      })
+      .catch((err) => err);
+  }, []);
+
+  const getUserInput = (event) => {
+    console.log(event.target.value);
+    setUserInput(event.target.value);
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <PopularGames data={data} />
-      <Games data={mockData2} />
+      {console.log("d", data)}
+      {/* {typeof backendData.data === "undefined" ? (
+        <p>loading...</p>
+      ) : (
+        backendData.data.map((user) => {
+          return <p className="backend">{user.name}</p>;
+        })
+      )} */}
+      <Router>
+        <Navbar />
+        <PopularGames data={data} />
+        <SearchBar getUserInput={getUserInput} />
+        <Games data={data} userInput={userInput} />
+      </Router>
     </div>
   );
 }

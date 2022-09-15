@@ -5,11 +5,11 @@ import liquid from "../../assets/liquid.jpeg";
 const PopularGames = (props) => {
   return (
     <div className="popular-games">
-      <h2 className="popular-games-header">Popular Games</h2>
+      <h2 className="popular-games-header">Popular Right Now</h2>
       <div className="popular-games-card-container">
         {props.data.map((game) => {
           return (
-            <div className="popular-game-card" key={game.background_image}>
+            <div className="popular-game-card" key={parseInt(game.id)}>
               <img
                 src={game.background_image}
                 alt=""

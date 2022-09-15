@@ -32,6 +32,7 @@ h3 {
     min-width: 0;
     margin-left: 10px;
     margin-right: 10px;
+    text-decoration: none;
 } 
 
 .navbar-games:hover,

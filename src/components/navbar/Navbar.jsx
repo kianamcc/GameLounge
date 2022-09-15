@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/gamelounge-logo.png";
 import user from "../../assets/user.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,9 +14,15 @@ const Navbar = () => {
           src={logo}
           alt="logo-img"
         />
-        <h3 className="navbar-games">Games</h3>
-        <h3 className="navbar-about">About</h3>
-        <h3 className="navbar-contact">Contact</h3>
+        <Link className="navbar-games" to="/">
+          <h3>Games</h3>
+        </Link>
+        <Link className="navbar-about" to="/">
+          <h3>About</h3>
+        </Link>
+        <Link className="navbar-contact" to="/">
+          <h3>Contact</h3>
+        </Link>
         <img className="navbar-user" data-testid="user" src={user} alt="" />
       </div>
     </div>
